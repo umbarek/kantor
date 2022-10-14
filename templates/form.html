@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+</head>
+<body>
+<h1> Kalkulator wymiany walut</h1>
+<form method="post" action="/form">
+
+<div class="container">
+    <label for="code">Wybierz walutę</label>
+        <select name="code" id="code">
+            <option value="USD">USD</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+            <option value="HUF">HUF</option>
+            <option value="CHF">CHF</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="CZK">CZK</option>
+            <option value="DKK">DKK</option>
+            <option value="NOK">NOK</option>
+            <option value="SEK">SEK</option>
+            <option value="XDR">XDR</option>
+        </select>
+        
+   <p><label for="amount">Ilość</label>
+        <input name="amount" value=""></input></p>
+
+    <input type="submit" value="Przelicz">
+  </div>
+
+  <div>{{codes}}</div>
+
+</form>
+</body>
+</html>
